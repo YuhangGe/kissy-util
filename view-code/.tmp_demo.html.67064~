@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>KISSY util</title> 
+	<link rel="shortcut icon" href="../../kissy-dpl/base/assets/favicon.ico"/> 
+	<link rel="stylesheet" href="../../kissy-dpl/base/assets/reset.css"/> 
+	<link rel="stylesheet" href="../../kissy-dpl/base/assets/kissy-docs.css"/> 	
+	<script src="../../kissy-dpl/base/assets/kissy.js"></script> 
+	<script src="../../kissy-dpl/base/assets/kissy-docs.js"></script> 
+</head>
+<body>
+    <div id="header"> 
+		<h1 class="logo"><a alt="KISSY" href="http://kissyui.com/"><img src="../../kissy-dpl/base/assets/logo.png"/></a></h1> 
+		<div class="sub-title">util</div>
+		<ul class="navigation"> 
+			<li><a href="http://blog.kissyui.com/">博客</a></li> 
+			<li><a href="http://github.com/kissyteam">源码</a></li> 		
+		</ul>
+		
+	</div> 
+    <div id="content">
+		<div class="s-crumbs">
+			<span>当前位置：</span>
+			<a href="http://kissyui.com/">KISSY</a>
+			<a href="../index.html">util</a>
+			<span>viewCode</span>
+		</div>
+			<div class="s-section">				
+				作者：fool2fish@gmail.com(沉鱼)<br/>
+				功能：查看源码<br/>
+				描述：用于查看demo页的源码，点击触点，包含源码的textarea会展开或收起。<br/>
+				源码：<a href="view-code.js">view-code.js</a>
+			</div>
+			
+			<h3 class="s-title">Demo</h3>			
+			<div class="s-section">
+				<div>
+					<!-- code start -->
+					<div style="padding:10px;border:1px solid #b4d0f3;background:#e5effe;">
+						点击下面的链接，显示该蓝色区域源码<br/>
+						注：不兼容ie系
+					</div>
+					<!-- code end -->
+				</div>
+				<a class="S_ViewCode" href="#">显示源码</a>
+			</div>
+    </div>
+    <div id="footer">
+        &copy; Copyright 2010~2011, KISSY Team.
+    </div>
+</body>
+</html>

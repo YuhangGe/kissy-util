@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>KISSY util</title> 
+	<link rel="shortcut icon" href="../../kissy-dpl/base/assets/favicon.ico"/> 
+	<link rel="stylesheet" href="../../kissy-dpl/base/assets/reset.css"/> 
+	<link rel="stylesheet" href="../../kissy-dpl/base/assets/kissy-docs.css"/> 	
+	<script src="../../kissy-dpl/base/assets/kissy.js"></script> 
+	<script src="../../kissy-dpl/base/assets/kissy-docs.js"></script> 
+	<script src="view-code.js"></script> 
+</head>
+<body>
+    <div id="header"> 
+		<h1 class="logo"><a alt="KISSY" href="http://kissyui.com/"><img src="../../kissy-dpl/base/assets/logo.png"/></a></h1> 
+		<div class="sub-title">util</div>
+		<ul class="navigation"> 
+			<li><a href="http://blog.kissyui.com/">博客</a></li> 
+			<li><a href="http://github.com/kissyteam">源码</a></li> 		
+		</ul>
+		
+	</div> 
+    <div id="content">
+		<div class="s-crumbs">
+			<span>当前位置：</span>
+			<a href="http://kissyui.com/">KISSY</a>
+			<a href="../index.html">util</a>
+			<span>viewCode</span>
+		</div>
+			<pre class="s-section">				
+作者：fool2fish@gmail.com(沉鱼)
+功能：查看源码
+描述：很方便的查看源码功能，点击触点，会找到出触点前一个元素内包含的代码，显示在触点下方的源码框中。
+     采用事件代理的方式，页面中多个触点，只要使用同一的class命名，注册一次即可。
+源码：<a href="view-code.js">view-code.js</a></pre>
+			
+			<h3 class="s-title">Demo</h3>			
+			<div class="s-section">
+				<div>
+					<!-- code start -->
+					<div style="padding:10px;border:1px solid #b4d0f3;background:#e5effe;">
+					<div>
+						点击下面的链接，显示该蓝色区域源码<br />
+						<img/><img class="test" />
+						<hr/>
+					</div>
+					</div>
+					<!-- code end -->
+				</div>
+				<a class="S_ViewCode" href="#">显示源码</a>
+				
+			</div>
+			<h3 class="s-title">API</h3>			
+			<div class="s-section">
+				<h4 class="s-api-title">方法</h4>
+				<div class="s-api-method">KISSY.util.viewCode( triggerCls, codeBoxStyle )</div>
+				<h4 class="s-api-title">参数</h4>
+				<div class="s-api-params">
+					<ul class="s-list">
+						<li>{String} [ <em>triggerCls</em> = 'S_ViewCode' ] 触发元素的class</li>
+						<li>{String} [ <em>codeBoxStyle</em> = 'width:99%;height:150px;border:1px solid #ccc;' ] 源码框的style属性或者class名</li>
+					</ul>
+				</div>
+				<h4 class="s-api-title">返回</h4>
+				<div class="s-api-return">null</div>
+			</div>
+			
+			<h3 class="s-title">Note</h3>			
+			<div class="s-section">
+				<ul class="s-list">
+					<li>目前不支持ie系。</li>
+				</ul>
+			</div>
+    </div>
+    <div id="footer">
+        &copy; Copyright 2010~2011, KISSY Team.
+    </div>
+	<script>
+		KISSY.ready(function(S){
+			S.util.viewCode();
+		})
+	</script>
+</body>
+</html>
