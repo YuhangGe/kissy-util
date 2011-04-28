@@ -63,9 +63,12 @@ KISSY.add('util/view-code', function(S) {
 	
 	//代码格式化
 	function format(code){
+		//处理前导空白字符
 		code = code.replace(/^[\r\n]+|[\s\r\n]+$/g,'');
         var tabs = code.match(/^\s*/)[0];
         code = code.replace(new RegExp(tabs,'g'),'');
+		//给自结束表添加结束斜杠（默认获取到的是没有的）
+		code  = code.replace(/(<[img|br|hr].+?)>/g,'$1\/>')
         return code;
     }
 	
