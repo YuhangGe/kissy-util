@@ -2,7 +2,7 @@
  *          查看源码
  * @desc    很方便的查看源码功能，点击触点，会找到出触点前一个元素内包含的代码，显示在触点下方的源码框中。
  * 			采用事件代理的方式，页面中多个触点，只要使用同一的class命名，注册一次即可。
- * @creator fool2fish@gmail.com
+ * @creator fool2fish<fool2fish@gmail.com>
  */
  
 KISSY.add('util/view-code', function(S) {
@@ -73,8 +73,8 @@ KISSY.add('util/view-code', function(S) {
     }
 	
 	//兼容老版本kissy
-    S.namespace("util");
-    S.util.viewCode=viewCode;
+    S.namespace("Util");
+    S.Util.viewCode=viewCode;
 
     return viewCode;
 });

@@ -1,0 +1,9 @@
+*.iml
+.idea/
+*~
+*.diff
+*.patch
+*.swp
+*.bak
+.DS_Store
+Thumb.db
