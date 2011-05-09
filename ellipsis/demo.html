@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>KISSY util - yourUtil</title>
+<link rel="shortcut icon" href="../../kissy-dpl/base/assets/favicon.ico"/>
+<link rel="stylesheet" href="../../kissy-dpl/base/assets/reset.css"/>
+<link rel="stylesheet" href="../../kissy-dpl/base/assets/kissy-docs.css"/>
+<script src="../../kissy-dpl/base/assets/kissy.js"></script>
+<script src="../../kissy-dpl/base/assets/kissy-docs.js"></script>
+<script src="ellipsis.js"></script>
+</head>
+<body>
+<div id="header">
+    <h1 class="logo"><a alt="KISSY" href="http://kissyui.com/"><img src="../../kissy-dpl/base/assets/logo.png"/></a></h1>
+    <div class="sub-title">Util</div>
+    <ul class="navigation">
+        <li><a href="http://blog.kissyui.com/">博客</a></li>
+        <li><a href="http://github.com/kissyteam">源码</a></li>
+    </ul>
+
+</div>
+<div id="content">
+    <div class="s-crumbs">
+        <span>当前位置：</span>
+        <a href="http://kissyui.com/">KISSY</a>
+        <a href="../index.html">Util</a>
+        <span>ellipsis</span>
+    </div>
+        <pre class="s-section">
+作者：乔花(qiaohua@taobao.com)
+功能：字符串省略号后缀
+描述：支持大多数浏览器
+源码：<a href="ellipsis.js">ellipsis.js</a></pre>
+
+    <h3 class="s-title">使用实例</h3>
+    <div class="s-section">
+        <div class="s-demo">
+            <style>
+                .ellipsis {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    width: 360px;
+                }
+
+                a.ellipsis {
+                    display: inline-block;
+                    *display: inline;
+                    *zoom: 1;
+                }
+            </style>
+            <p class='ellipsis'>这里面是一段很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长的文本.</p>
+        <p><a class='ellipsis'>我是a, 这里面是一段很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长的文本.</a></p>
+
+        <script>
+            KISSY.use('util/ellipsis', function(S) {
+                S.Util.ellipsis('.ellipsis');
+            })
+        </script>
+    </div>
+    <a class="s-view-code" href="#">显示源码</a><!--点击该链接自动帮你显示s=demo里的内容，如不需要，去除链接即可-->
+</div>
+
+<h3 class="s-title">API</h3>
+<div class="s-section">
+    <h4 class="s-api-title">方法</h4>
+    <div class="s-api-method">KISSY.util.yourUtil ( param )</div>
+    <h4 class="s-api-title">参数</h4>
+    <div class="s-api-params">
+        <ul class="s-list">
+            <li>{String} [ <em>param</em> = 'S_ViewCode' ] 触发元素的class。注释具体格式参见jsdoc规范。</li>
+        </ul>
+    </div>
+    <h4 class="s-api-title">返回</h4>
+    <div class="s-api-return">null</div>
+</div>
+
+</div>
+<div id="footer">
+    &copy; Copyright 2010~2011, KISSY Team.
+</div>
+</body>
+</html>
