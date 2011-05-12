@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>load</title>
+<link href="http://a.tbcdn.cn/s/kissy/1.1.6/cssbase/base-min.css" rel="stylesheet" media="all" />
+<style>
+body{
+background:#FFEFD5;
+font-family:'Microsoft YaHei';
+}
+#content{
+padding:10px;
+}
+.section{
+	margin-bottom:10px;
+}
+.section h3{
+	padding:5px 0;
+	font-size:14px;
+	border-bottom:1px solid #ccc;
+}
+.section p{
+	padding:5px;
+	background:#ccc;
+}
+
+em{
+color:red;
+}
+pre {
+	margin-top:20px;
+    padding: 8px;
+    border: 1px solid #C7CFD5;
+    border-left-width: 5px;
+    color:#666;
+    font-family:Courier,Consolas,monospace;
+    background-color: #F5F9FD;
+    overflow: auto;
+}
+</style>
+
+<script src="http://a.tbcdn.cn/s/kissy/1.1.6/kissy-min.js"></script>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+<body>
+
+<div id="content">
+
+
+
+	<div>下面这些文字是打酱油的，单击标题会改变页面的高度</div>
+	<div class="section" id="id3">
+	<h3>[+] 应用场景分析<a class="headerlink" href="#id3" title="Permalink to this headline"></a></h3>
+	<p>一个需求到来, 比如这个图片放大效果, 首先我们需要这个功能能用在哪些地方, 或哪些网站上已经使用了, 如果有的话, 就对比一下不同的情况下不同的要求, 如 #slide4 . 这样以后, 对比自己的需求, 想好要实现什么功能, 哪些功能保留, 哪些功能不需要, —- 明确需求;</p>
+	<p>一个需求到来, 比如这个图片放大效果, 首先我们需要这个功能能用在哪些地方, 或哪些网站上已经使用了, 如果有的话, 就对比一下不同的情况下不同的要求, 如 #slide4 . 这样以后, 对比自己的需求, 想好要实现什么功能, 哪些功能保留, 哪些功能不需要, —- 明确需求;</p>
+	</div>
+	<div class="section" id="id4">
+	<h3>[+] 同类组件调研<a class="headerlink" href="#id4" title="Permalink to this headline"></a></h3>
+	<p>需求明确之后, 查找现有的同类组件, 看看他们针对这个问题, 是怎么实现的, 实现哪些功能, 哪些可以借鉴的地方, 哪些不足的地方要避免或者改进, 如 #slide6 , —- 明确要实现的功能有哪些;</p>
+	<p>需求明确之后, 查找现有的同类组件, 看看他们针对这个问题, 是怎么实现的, 实现哪些功能, 哪些可以借鉴的地方, 哪些不足的地方要避免或者改进, 如 #slide6 , —- 明确要实现的功能有哪些;</p>
+	</div>
+	<div class="section" id="id5">
+	<h3>[+] 功能点梳理<a class="headerlink" href="#id5" title="Permalink to this headline"></a></h3>
+	<p>分离出完成整个功能需要的几个核心功能点, 并针对各个功能点逐个描述, 如 #slide8 , 这也可以帮你理清思路,  —- 进一步明确待实现功能;</p>
+	<p>分离出完成整个功能需要的几个核心功能点, 并针对各个功能点逐个描述, 如 #slide8 , 这也可以帮你理清思路,  —- 进一步明确待实现功能;</p>
+	<p>分离出完成整个功能需要的几个核心功能点, 并针对各个功能点逐个描述, 如 #slide8 , 这也可以帮你理清思路,  —- 进一步明确待实现功能;</p>
+	</div>
+
+
+
+
+	<em>* 这是iframe页面frame.html,单击标题能够改变页面高度，iframe能够自适应高度。</em>
+<pre class="code">
+&lt;iframe frameborder="1" scrolling="no" id="testframe2" width="90%" 
+ src="frame2.html?data-frameid=testframe2&data-timer=600&data-proxy=proxy.html"&gt;&lt;/iframe&gt;
+参数可以通过父页面在url上传，但是除非当前被引用的iframe页面是静态的，因为如果iframe的url发生变化，参数会丢失
+</pre>
+	
+	
+</div>
+
+
+<script>
+
+
+KISSY.ready(function(S){
+	S.all("#content p").hide();
+	S.all("#content h3").on("click",function(ev){
+		S.all("p",ev.target[0].parentNode).toggle(0.3);
+	});	
+});
+
+
+	
+	
+	
+</script>
+
+<script src="adaptive-frame.js"  ></script>
+
+
+</body>
+</html>

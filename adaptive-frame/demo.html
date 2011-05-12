@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>KISSY util - adaptframe</title> 
+	<link rel="shortcut icon" href="../../kissy-dpl/base/assets/favicon.ico"/> 
+	<link rel="stylesheet" href="../../kissy-dpl/base/assets/reset.css"/> 
+	<link rel="stylesheet" href="../../kissy-dpl/base/assets/kissy-docs.css"/> 	
+	<script src="../../kissy-dpl/base/assets/kissy.js"></script> 
+	<script src="../../kissy-dpl/base/assets/kissy-docs.js"></script> 
+</head>
+<body>
+    <div id="header"> 
+		<h1 class="logo"><a alt="KISSY" href="http://kissyui.com/"><img src="../../kissy-dpl/base/assets/logo.png"/></a></h1> 
+		<div class="sub-title">Util</div>
+		<ul class="navigation"> 
+			<li><a href="http://blog.kissyui.com/">博客</a></li> 
+			<li><a href="http://github.com/kissyteam">源码</a></li> 		
+		</ul>
+		
+	</div> 
+    <div id="content">
+		<div class="s-crumbs">
+			<span>当前位置：</span>
+			<a href="http://kissyui.com/">KISSY</a>
+			<a href="../index.html">Util</a>
+			<span>adaptive-frame</span>
+		</div>
+			<pre class="s-section">				
+作者：satans17@gmail.com(常胤)
+功能：跨域iframe高度自适应解决方案,不依赖任何框架
+描述：通过简单的配置和引用就能解决跨域iframe高度自适应的问题，能实时自适应iframe高度，<a href=" http://ued.koubei.com/?p=1217">关于iframe自适应高度的讨论</a>.
+源码：<a href="adaptive-frame.js">adaptive-frame.js</a></pre>
+			
+			
+			
+			
+			
+			<h3 class="s-title">Demo - 通过在script标签中配置伪属性传参</h3>			
+			<div class="s-section">
+				<div class="s-demo">
+
+					<iframe frameborder="1" scrolling="no" id="testframe" width="90%" src="frame.html"></iframe>
+					<!--
+					只需两步，轻松搞定iframe高度自适应
+					1. 在iframe中引入脚本：adaptframe.js
+					2. 在iframe站点中放入代理文件proxy.html
+					-->
+				
+				</div>
+				<a class="s-view-code" href="#">显示源码</a>
+			</div>
+			
+			
+			
+			
+			
+			<h3 class="s-title">Demo - 通过url传参</h3>			
+			<div class="s-section">
+				<div class="s-demo">
+
+					<iframe frameborder="1" scrolling="no" id="testframe2" width="90%" src="frame2.html?data-frameid=testframe2&data-timer=600&data-proxy=proxy.html"></iframe>
+
+  
+  
+				</div>
+				<a class="s-view-code" href="#">显示源码</a>
+			</div>
+			
+			
+			
+			
+			
+			<h3 class="s-title">API</h3>			
+			<div class="s-section">
+				直接按照上面的示例引用，将proxy.html拷贝一份到你的项目中即可。
+			</div>
+			
+			<h3 class="s-title">Note</h3>			
+			<div class="s-section">
+				<ul class="s-list">
+					<li>实时自适应高度是通过定时器的方式实现的，能实现效果，不过不会那么流畅。</li>
+					<li>实时自适应高度经测试对效率没什么影响。</li>
+				</ul>
+			</div>
+    </div>
+    <div id="footer">
+        &copy; Copyright 2010~2011, KISSY Team.
+    </div>
+</body>
+</html>
